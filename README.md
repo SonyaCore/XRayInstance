@@ -38,3 +38,12 @@ The Stop function is used to close the Xray instance.
 
 Start
 The Start function is used to start the Xray instance. It returns an error if there is an issue starting the instance.
+
+## How to run
+
+Simply build the code and run it with your own configuration :
+
+```
+CGO_ENABLED=0 go build -v -ldflags="-s -w" .
+XRayInstance config.json
+```
